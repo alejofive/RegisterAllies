@@ -1,12 +1,12 @@
 import "./App.css";
 
+import Login1 from "./Pages/Login1";
+
 function App() {
   return (
-    <>
-      <div>
-        <h1>hola</h1>
-      </div>
-    </>
+    <div className="bg-gradient m-auto flex justify-center">
+      <Login1 />
+    </div>
   );
 }
 
