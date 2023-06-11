@@ -1,14 +1,10 @@
+import { NavLink } from "react-router-dom";
+import Logo from "../Components/logo";
 const login1 = () => {
   return (
     <div className="w-[284px] pt-24">
       {/* logo */}
-      <div className="flex justify-center">
-        <img
-          className="w-[220px] h-[41px] object-contain"
-          src="./img/logo.png"
-          alt=""
-        />
-      </div>
+      <Logo />
       {/* nav */}
       <nav className="flex mt-12">
         <div className="box-nav box-nav-active relative">
@@ -53,56 +49,58 @@ const login1 = () => {
               placeholder="000 000 000"
             />
           </div>
-          <div className="style-input relative">
-            <label htmlFor="" className="font-semibold text-xs text-white">
-              Senha
-            </label>
-            <button className="absolute right-0 bottom-4">
-              <img
-                className="w-[24px] h-[24px] object-contain"
-                src="./img/visibility.png"
-                alt=""
-              />
-            </button>
-            <input
-              type="text"
-              placeholder="Digite seu Senha"
-              className="w-full bg-transparent border-b-2 py-4 text-white"
+        </div>
+        <div className="style-input relative mt-6">
+          <label htmlFor="" className="font-semibold text-xs text-white">
+            Senha
+          </label>
+          <button className="absolute right-0 bottom-4">
+            <img
+              className="w-[24px] h-[24px] object-contain"
+              src="./img/visibility.png"
+              alt=""
             />
-          </div>
-          <div className="style-input relative">
-            <label htmlFor="" className="font-semibold text-xs text-white">
-              Confirme sua Senha
-            </label>
-            <button className="absolute right-0 bottom-4">
-              <img
-                className="w-[24px] h-[24px] object-contain"
-                src="./img/visibility.png"
-                alt=""
-              />
-            </button>
-            <input
-              type="text"
-              placeholder="Digite seu Senha"
-              className="w-full bg-transparent border-b-2 py-4 text-white"
+          </button>
+          <input
+            type="text"
+            placeholder="Digite seu Senha"
+            className="w-full bg-transparent border-b-2 py-4 text-white"
+          />
+        </div>
+        <div className="style-input relative mt-6">
+          <label htmlFor="" className="font-semibold text-xs text-white">
+            Confirme sua Senha
+          </label>
+          <button className="absolute right-0 bottom-4">
+            <img
+              className="w-[24px] h-[24px] object-contain"
+              src="./img/visibility.png"
+              alt=""
             />
-          </div>
+          </button>
+          <input
+            type="text"
+            placeholder="Digite seu Senha"
+            className="w-full bg-transparent border-b-2 py-4 text-white"
+          />
+        </div>
+        <NavLink to="/login2">
           <button className="mt-9 w-full style-button font-semibold text-base py-[14px]">
             Próximo
           </button>
-          <div className="w-full h-[6px] bg-linea mt-4">
-            <div className="bg-linea-porcentaje"></div>
-          </div>
-          <p className="text-porcentaje text-center mt-2">Passo 1/4</p>
-          <div className="flex items-center justify-center">
-            <div className="text-center  mt-3 pb-12">
-              <p className="text-base text-white font-light w-full">
-                © Copyright PlayGreen 2023 <br />
-                <span className="font-normal w-full">
-                  Todos os direitos reservados
-                </span>
-              </p>
-            </div>
+        </NavLink>
+        <div className="w-full h-[6px] bg-linea mt-4">
+          <div className="bg-linea-porcentaje"></div>
+        </div>
+        <p className="text-porcentaje text-center mt-2">Passo 1/4</p>
+        <div className="flex items-center justify-center">
+          <div className="text-center  mt-3 pb-12">
+            <p className="text-base text-white font-light w-full">
+              © Copyright PlayGreen 2023 <br />
+              <span className="font-normal w-full">
+                Todos os direitos reservados
+              </span>
+            </p>
           </div>
         </div>
       </form>
