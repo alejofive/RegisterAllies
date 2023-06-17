@@ -1,27 +1,6 @@
-import { NavLink } from "react-router-dom";
-import Logo from "../Components/logo";
-const Login4 = () => {
+const Form4 = () => {
   return (
-    <div className="w-[330px] flex flex-col items-center pt-24">
-      {/* logo */}
-      <Logo />
-      {/* nav */}
-      <nav className="flex mt-12 w-[284px] ">
-        <div className="box-nav box-nav-active relative">
-          <NavLink to="/login3" className="absolute left-2">
-            <img src="./img/flecha-right.png" alt="" />
-          </NavLink>
-          <button>
-            <h3 className="font-semibold text-base text-white">Cadastrar</h3>
-          </button>
-        </div>
-        <div className="box-nav ">
-          <button>
-            <h3 className="font-semibold text-base text-white">Login</h3>
-          </button>
-        </div>
-      </nav>
-      {/* terminos */}
+    <div>
       <section className="mt-6">
         <h3 className="text-xs text-white/95 font-semibold text-center">
           Termos e Condições
@@ -62,32 +41,17 @@ const Login4 = () => {
           Você ganha uma excelente porcentagem
         </p>
       </div>
-
-      <section className="w-[249px] mt-7 flex flex-col items-center">
-        <div className="flex">
+      <section className="flex flex-col items-center justify-center mt-5">
+        <div className="flex justify-center">
           <input type="checkbox" className="mr-2" />
           <p className="text-xs text-white/95 border-b">
             Aceita termos e Condições
           </p>
         </div>
         <button className="button-terminos mt-9">Cadastrar</button>
-        <div className="w-full h-[6px] bg-linea mt-4">
-          <div className="bg-linea-porcentaje"></div>
-        </div>
-        <p className="text-porcentaje text-center mt-2">Passo 1/4</p>
-        <div className="flex items-center justify-center">
-          <div className="text-center  mt-3 pb-12">
-            <p className="text-base text-white font-light w-full">
-              © Copyright PlayGreen 2023 <br />
-              <span className="font-normal w-full">
-                Todos os direitos reservados
-              </span>
-            </p>
-          </div>
-        </div>
       </section>
     </div>
   );
 };
 
-export default Login4;
+export default Form4;
