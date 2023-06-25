@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from "../Components/Logo";
 import Form1 from "../Components/RegisterSteps/Form1";
 import Form2 from "../Components/RegisterSteps/Form2";
 import Form3 from "../Components/RegisterSteps/Form3";
 import Form4 from "../Components/RegisterSteps/Form4";
-const login1 = () => {
+const Register = () => {
   const [step, setStep] = useState(1);
 
   return (
@@ -26,16 +27,16 @@ const login1 = () => {
           </button>
         </div>
         <div className="box-nav ">
-          <button>
+          <NavLink to="/login">
             <h3 className="font-semibold text-base text-white">Login</h3>
-          </button>
+          </NavLink>
         </div>
       </nav>
       {/* formulario */}
       {step === 1 && <Form1 setStep={setStep} />}
       {step === 2 && <Form2 setStep={setStep} />}
       {step === 3 && <Form3 setStep={setStep} />}
-      {step === 4 && <Form4 setStep={setStep} />}
+      {step === 4 && <Form4 />}
       <div className="w-full h-[6px] bg-linea mt-4">
         <div className="bg-linea-porcentaje"></div>
       </div>
@@ -54,4 +55,4 @@ const login1 = () => {
   );
 };
 
-export default login1;
+export default Register;

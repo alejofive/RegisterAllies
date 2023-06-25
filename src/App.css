@@ -99,3 +99,9 @@
   font-size: 16px;
   color: #ffffff;
 }
+
+.style-button2 {
+  background: rgba(56, 193, 95, 1);
+  border-radius: 100px;
+  color: white;
+}
